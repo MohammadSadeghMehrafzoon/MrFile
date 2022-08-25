@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
-        //The storage location of the program folders in the internal storage = Android >data >packageName
-        val file = getExternalFilesDir(null)!! //null = Android >data >packageName
+        //The storage location of the program folders in the internal storage = Android >data >packageName >file
+        val file = getExternalFilesDir(null)!! //null = Android >data >packageName >file
         val path = file.path
 
         val transaction = supportFragmentManager.beginTransaction()
